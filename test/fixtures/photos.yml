@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  yelper_id: 
+  review_id: 
+  photo_url: MyString
+
+two:
+  yelper_id: 
+  review_id: 
+  photo_url: MyString

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  business_id: 
+  yelper_id: 
+  snippet: MyText
+
+two:
+  business_id: 
+  yelper_id: 
+  snippet: MyText

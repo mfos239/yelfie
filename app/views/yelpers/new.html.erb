@@ -1,0 +1,21 @@
+<div class="container">
+
+  <div class="get_started">
+      <div class="header">
+        <%= image_tag "yelp-logo.png" %>
+        <h3 class="text-muted">Project Yelfie</h3>
+          <p>
+            Ever wanted to see your Yelp reviews in a Pinterest-like format? Now you can with Yelfie -- a Yelp Selfie!
+          </p>
+      </div>
+
+    <%= simple_form_for @yelper do |f| %>
+            <fieldset>
+              <%= f.input :yelp_profile_url, label: "Enter Yelp Profile URL" %>
+              <%#= f.input :yelp_user_id, label: "Enter Yelp Profile URL", required: false %>
+              <%= f.button :submit, value: "Go", class: "btn-danger", data: {"loading-text" => "Generating Yelfie, please wait..."} %>
+            </fieldset>
+        <% end %>
+  </div>
+
+</div> <!-- /container -->

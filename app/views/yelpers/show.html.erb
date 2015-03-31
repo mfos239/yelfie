@@ -1,0 +1,27 @@
+<div class="yelfie">
+    <nav class="navbar">
+      <div class="container">
+        <div id="navbar" class="navbar-fixed-top">
+          <div class="navbar-inset">
+              <div class="brand"><%= link_to "Project Yelfie", root_path %></div>
+              <div class="form">
+                  <%= simple_form_for Yelper.new, html: {class: "form-inline"} do |f| %>
+                      <%= f.input :yelp_profile_url, label: false, placeholder: "Enter Yelp Profile URL" %>
+                      <%= f.button :submit, value: "Go", class: "btn-danger", data: {"loading-text" => "Generating Yelfie, please wait..."} %>
+                  <% end %>
+              </div>
+              <div class="clearfix"></div>
+          </div>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <header>
+        <div class="photo">
+          <%= image_tag(@yelper.photo_url, alt: "Photo of #{@yelper.name}") %>
+        </div>
+        <%= @yelper.name %>
+    </header>
+
+    <div class="waterfall-container reviews" data-yelper-id="<%= @yelper.id %>"></div>
+</div>

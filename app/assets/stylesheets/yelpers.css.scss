@@ -1,0 +1,68 @@
+// Place all the styles related to the yelpers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body[data-controller='yelpers'] {
+
+  margin: 0;
+  padding: 0;
+
+  header {
+    text-align: center;
+    padding: 12px 0;
+
+    img {
+      border-radius: 5px;
+    }
+  }
+
+  #navbar {
+    padding: 12px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+    div.brand {
+      float: left;
+      a {
+        color:#333;
+        vertical-align: middle;
+        line-height: 34px;
+      }
+    }
+    div.form {
+      float: left;
+      .form-control {
+        width:500px;
+        margin-left: 12px;
+      }
+    }
+  }
+
+  .get_started {
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.75);
+    padding: 24px 24px 48px 24px;
+    width: 800px;
+    margin: 24px auto;
+    text-align: center;
+
+    div.header {
+      margin: 0 0 24px 0;
+    }
+
+    .form-control {
+      margin-left: 12px;
+
+    }
+
+    .btn {
+      min-width: 100px;
+    }
+
+  }
+
+  .yelfie {
+    background-color:#efefef;
+  }
+
+}

@@ -1,0 +1,24 @@
+<div class="item">
+  <%
+     photo = review.photos.first
+     if photo %>
+      <div class="image"><%= link_to image_tag(photo.photo_url, width: 250), review.business.get_url, target: "_blank" %></div>
+  <% end %>
+  <div class="item-content">
+    <div class="biz-name"><%= link_to review.business.name, review.business.get_url, target: "_blank" %></div>
+    <div class="biz-address"><%= review.business.full_address %></div>
+    <div class="row">
+      <div class="col col-xs-6">
+        <div class="rating" data-number="<%= review.rating %>"></div>
+      </div>
+      <div class="col col-xs-6">
+        <div class="date"><%= review.review_date.strftime("%m/%d/%Y") %></div>
+      </div>
+    </div>
+    <div class="review-text">
+        <p>
+          <%= review.review_content.html_safe %>
+        </p>
+    </div>
+  </div>
+</div>

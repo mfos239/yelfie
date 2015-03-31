@@ -1,0 +1,9 @@
+<%
+
+    json = {total: @reviews.length, reviews: ""}
+
+    @reviews.each do |review|
+        json[:reviews] << render(partial: "reviews/review", formats: [:html], locals: {review: review})
+    end
+%>
+<%= raw(json.to_json) %>
