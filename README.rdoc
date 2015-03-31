@@ -7,10 +7,7 @@ Future optimizations to make this app better:
 * Load and display reviews asynchronously or show a better loading animation
 * Shorten the review text using more/less links
 * Add Yelfie update button to regenerate the Yelfie from new reviews
-* Consider a Ruby gem alternative to PhantomJS for retrieving the reviews
+* Consider an alternative to PhantomJS for retrieving the reviews
 
 Installation on heroku requires the following configurations:
 https://gist.github.com/edelpero/9257311
-
-Known issues:
-* Building a Yelfie on local machine grabs 10 pages of reviews, while Heroku deployed app only grabs page one.
