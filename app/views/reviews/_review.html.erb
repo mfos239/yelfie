@@ -2,7 +2,7 @@
   <%
      photo = review.photos.first
      if photo %>
-      <div class="image"><%= link_to image_tag(photo.photo_url, width: 250), review.business.get_url, target: "_blank" %></div>
+      <div class="image"><%= link_to image_tag(photo.photo_url, width: 250, height: 250), review.business.get_url, target: "_blank" %></div>
   <% end %>
   <div class="item-content">
     <div class="biz-name"><%= link_to review.business.name, review.business.get_url, target: "_blank" %></div>
