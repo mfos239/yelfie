@@ -7,7 +7,7 @@
               <div class="form">
                   <%= simple_form_for Yelper.new, html: {class: "form-inline"} do |f| %>
                       <%= f.input :yelp_profile_url, label: false, placeholder: "Enter Yelp Profile URL" %>
-                      <%= f.button :submit, value: "Go", class: "btn-danger", data: {"loading-text" => "<i class='icon-spinner icon-spin icon-large'></i> Generating Yelfie, please wait..."} %>
+                      <%= f.button :submit, value: "Go", class: "btn-danger", data: {"loading-text" => "Generating Yelfie, please wait..."} %>
                   <% end %>
               </div>
               <div class="clearfix"></div>
