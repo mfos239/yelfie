@@ -13,8 +13,15 @@ class YelpersController < ApplicationController
     @yelper = Yelper.new(yelper_params)
     @yelper.parse_user_id
 
-    if @yelper.errors.empty? and @yelper.save
-      if @yelper.run_update
+    if @yelper.errors.empty?
+
+      #see if a yelper already exists with the same yelp user id
+      previous_yelper = Yelper.where(yelp_user_id: @yelper.yelp_user_id).first
+
+      if previous_yelper
+        @yelper = previous_yelper
+        redirect_to yelper_path(@yelper)
+      elsif @yelper.save and @yelper.run_update
         redirect_to yelper_path(@yelper)
       else
         render "new"
@@ -22,6 +29,14 @@ class YelpersController < ApplicationController
     else
       render "new"
     end
+
+  end
+
+  def update
+
+    @yelper = Yelper.find(params[:id])
+    @yelper.run_update
+    redirect_to yelper_path(@yelper)
 
   end
 
