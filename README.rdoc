@@ -13,4 +13,4 @@ Installation on heroku requires the following configurations:
 https://gist.github.com/edelpero/9257311
 
 Known issues:
-* Building a Yelfie on local machine grabs 10 pages of reviews, while Heroku deployed app only pulls the 1st page.
+* Building a Yelfie on local machine grabs 10 pages of reviews, while Heroku deployed app only grabs page one.
