@@ -21,7 +21,6 @@ Yelfie::Application.configure do
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
   config.serve_static_assets = true
-  config.assets.paths << Rails.root.join("vendor", "assets", "images")
 
   config.static_cache_control = "public, max-age=2592000"
   config.action_controller.perform_caching = true
