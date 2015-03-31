@@ -50,11 +50,3 @@ test:
   pool: 5
   username: yelfie
   password:
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: yelfie_production
-  pool: 5
-  username: yelfie
-  password:
