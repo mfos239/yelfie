@@ -21,5 +21,3 @@ module Yelfie
     # config.i18n.default_locale = :de
   end
 end
-
-config.assets.paths << Rails.root.join("vendor", "assets", "images")
