@@ -9,3 +9,5 @@ Future optimizations to make this app better:
 * Add Yelfie update button to regenerate the Yelfie from new reviews
 * more...
 
+* Installation on heroku requires the following configurations:
+https://gist.github.com/edelpero/9257311
